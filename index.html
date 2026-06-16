@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prathmesh | Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="nav-logo">Prathmesh</div>
+    <div class="nav-logo">&#60;Prathmesh /&#62;</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -22,165 +23,237 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-bg-glow"></div>
     <div class="hero-content">
-      <p class="hero-greeting">Hi there, I'm</p>
+      <p class="hero-greeting">👋 Hi, I'm</p>
       <h1 class="hero-name">Prathmesh</h1>
-      <p class="hero-tagline">
-        Aspiring <span class="highlight">AI &amp; Data</span> Developer &bull;
-        Diploma in Computer Engineering
+      <p class="hero-role">
+        <span class="typed" id="typed"></span>
       </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      <p class="hero-sub">
+        Diploma in Computer Engineering · Jawantrao Sawant Polytechnic, Pune<br/>
+        Building real-world projects in Python, Flask & exploring AI/Data Analysis
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-glow">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
       </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+      <p>scroll</p>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section class="section" id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-grid">
-      <div class="about-avatar">
-        <div class="avatar-circle">P</div>
-      </div>
-      <div class="about-text">
-        <p>
-          I'm a third-year Diploma in Computer Engineering student at
-          <strong>Jawantrao Sawant Polytechnic, Pimpri, Pune</strong>.
-          I have hands-on experience in C, C++, Java, and Python, and I'm
-          actively building projects in AI and data analysis.
-        </p>
-        <p>
-          I also manage and develop the digital presence of our family dairy
-          business, <strong>Shiwalay Dudh Dairy</strong>, including a full-stack
-          e-commerce website with bilingual support.
-        </p>
-        <a href="#" class="btn btn-primary" download>Download Resume</a>
+    <div class="section-inner">
+      <p class="section-label">Who am I?</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="avatar">P</div>
+          <h3>Prathmesh</h3>
+          <p class="about-role">Developer · Student · Builder</p>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a third-year Diploma in Computer Engineering student at
+            <span class="accent">Jawantrao Sawant Polytechnic, Pimpri, Pune</span>.
+            I love building things — from CLI tools and data analyzers to full-stack web apps.
+          </p>
+          <p>
+            I also own and manage <span class="accent">Shiwalay Dudh Dairy (शिवालय दूध डेअरी)</span>,
+            for which I built a complete bilingual e-commerce platform with user auth,
+            admin dashboard, and variant-based ordering.
+          </p>
+          <p>
+            My goal is to build a career in <span class="accent">AI & Data Analysis</span>
+            — and I'm actively working toward it with real projects.
+          </p>
+          <a href="#" class="btn btn-glow" style="margin-top:1rem; display:inline-block;">
+            Download Resume ↓
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section class="section section-alt" id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <span class="skill-icon">💻</span>
-        <h3>Languages</h3>
-        <p>C &bull; C++ &bull; Java &bull; Python</p>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">🌐</span>
-        <h3>Web</h3>
-        <p>HTML &bull; CSS &bull; Flask</p>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">🛢️</span>
-        <h3>Database</h3>
-        <p>SQLite &bull; SQL Basics</p>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">🔧</span>
-        <h3>Tools</h3>
-        <p>Git &bull; GitHub &bull; VS Code</p>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">📊</span>
-        <h3>Exploring</h3>
-        <p>Data Analysis &bull; AI &bull; Pandas &bull; NumPy</p>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">🗣️</span>
-        <h3>Languages</h3>
-        <p>Marathi &bull; Hindi &bull; English</p>
+  <section class="section section-dark" id="skills">
+    <div class="section-inner">
+      <p class="section-label">What I know</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>C</span><span>C++</span><span>Java</span><span>Python</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>Flask</span><span>Jinja2</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>Database</h3>
+          <div class="skill-tags">
+            <span>SQLite</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>VS Code</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <h3>Exploring</h3>
+          <div class="skill-tags">
+            <span>Pandas</span><span>NumPy</span><span>Data Analysis</span><span>AI/ML</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🗣️</div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>Marathi</span><span>Hindi</span><span>English</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section class="section" id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
+    <div class="section-inner">
+      <p class="section-label">What I've built</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
 
-      <div class="project-card">
-        <div class="project-top">
-          <span class="project-tag">Python &bull; CLI</span>
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">01</span>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">CLI</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+          <h3>GitHub Profile Analyzer</h3>
+          <p>CLI tool that fetches GitHub user stats using the public API, renders ASCII charts, and exports data to JSON. Built entirely with Python's standard library — zero dependencies.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
         </div>
-        <h3>GitHub Profile Analyzer</h3>
-        <p>A command-line tool that fetches GitHub user stats using the public API,
-           displays ASCII charts, and exports data to JSON. Built with Python stdlib only.</p>
-        <div class="project-links">
-          <a href="#" target="_blank" class="btn btn-outline btn-sm">GitHub ↗</a>
+
+        <div class="project-card project-featured">
+          <div class="project-header">
+            <span class="project-num">02</span>
+            <div class="project-tags">
+              <span class="tag">Flask</span>
+              <span class="tag">Full Stack</span>
+              <span class="tag">Bilingual</span>
+            </div>
+          </div>
+          <div class="featured-badge">Featured</div>
+          <h3>Shiwalay Dudh Dairy Website</h3>
+          <p>Full-stack bilingual (Marathi/English) e-commerce site for a dairy business. Features user auth, product catalog with variants, cart, checkout, and a complete admin dashboard for orders & inventory.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
         </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">03</span>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">RSS</span>
+              <span class="tag">CLI</span>
+            </div>
+          </div>
+          <h3>News Aggregator CLI</h3>
+          <p>Zero-dependency RSS/Atom news aggregator with keyword filtering and export to HTML or JSON. Runs entirely on Python's standard library — no pip installs needed.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">04</span>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">JSON</span>
+            </div>
+          </div>
+          <h3>CLI To-Do List App</h3>
+          <p>Terminal-based task manager supporting add, complete, and delete with persistent JSON storage. Clean menu-driven interface, no external libraries required.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
       </div>
-
-      <div class="project-card">
-        <div class="project-top">
-          <span class="project-tag">Flask &bull; Full Stack</span>
-        </div>
-        <h3>Shiwalay Dudh Dairy Website</h3>
-        <p>Bilingual (Marathi/English) e-commerce site for a dairy business. Features
-           user auth, product catalog, cart, checkout, and a full admin dashboard.</p>
-        <div class="project-links">
-          <a href="#" target="_blank" class="btn btn-outline btn-sm">GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-top">
-          <span class="project-tag">Python &bull; RSS</span>
-        </div>
-        <h3>News Aggregator CLI</h3>
-        <p>Zero-dependency RSS/Atom news aggregator with keyword filtering and
-           export to HTML or JSON. Runs entirely on Python's standard library.</p>
-        <div class="project-links">
-          <a href="#" target="_blank" class="btn btn-outline btn-sm">GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-top">
-          <span class="project-tag">Python &bull; CLI</span>
-        </div>
-        <h3>CLI To-Do List App</h3>
-        <p>A terminal-based task manager that supports adding, completing, and
-           deleting tasks with persistent JSON storage. No external libraries.</p>
-        <div class="project-links">
-          <a href="#" target="_blank" class="btn btn-outline btn-sm">GitHub ↗</a>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section section-alt" id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p class="contact-sub">Open to internships, collaborations, and learning opportunities!</p>
-    <div class="contact-links">
-      <a href="mailto:your@email.com" class="contact-card">
-        <span>📧</span> your@email.com
-      </a>
-      <a href="https://github.com/yourusername" target="_blank" class="contact-card">
-        <span>🐙</span> github.com/yourusername
-      </a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-card">
-        <span>💼</span> LinkedIn
-      </a>
+  <section class="section section-dark" id="contact">
+    <div class="section-inner" style="text-align:center;">
+      <p class="section-label">Let's connect</p>
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-sub">Open to internships, collaborations & learning opportunities!</p>
+      <div class="contact-links">
+        <a href="mailto:your@email.com" class="contact-btn">
+          <span>📧</span> Email Me
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" class="contact-btn">
+          <span>🐙</span> GitHub
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-btn">
+          <span>💼</span> LinkedIn
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 Prathmesh · Made with HTML &amp; CSS</p>
+    <p>Designed & Built by <span class="accent">Prathmesh</span> · HTML & CSS · 2025</p>
   </footer>
 
-  <!-- Mobile nav toggle -->
   <script>
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.querySelector('.nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    const roles = ['Python Developer', 'Aspiring AI Engineer', 'Full Stack Developer', 'Data Enthusiast'];
+    let ri = 0, ci = 0, del = false;
+    const el = document.getElementById('typed');
+    function type() {
+      const word = roles[ri];
+      el.textContent = del ? word.slice(0, ci--) : word.slice(0, ci++);
+      if (!del && ci > word.length) { del = true; setTimeout(type, 1200); return; }
+      if (del && ci < 0) { del = false; ri = (ri + 1) % roles.length; ci = 0; }
+      setTimeout(type, del ? 60 : 90);
+    }
+    type();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.skill-card, .project-card, .about-card, .about-text').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
     });
   </script>
 
