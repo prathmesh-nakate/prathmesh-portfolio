@@ -102,4 +102,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">Designed & Built by <strong>Prathmesh</strong> · 2025</p>
+<p align="center">Designed & Built by <strong>Prathmesh</strong> · 2026</p>
